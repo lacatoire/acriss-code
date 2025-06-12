@@ -1,0 +1,4 @@
+services:
+  Acriss\AcrissTranslator:
+    arguments:
+      $translator: '@translator'
