@@ -19,6 +19,7 @@
       "Acriss\\Tests\\": "tests/"
     }
   },
+  "version": "1.0.0",
   "require": {
     "php": ">=8.2",
     "symfony/translation": "*"
