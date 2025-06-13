@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Acriss\Tests;
 
@@ -8,9 +10,6 @@ use Acriss\AcrissTranslator;
 use Acriss\Model\AcrissCodeDetailsResult;
 use Acriss\Model\TranslatedAcrissCode;
 use Acriss\Enum\AcrissCategory;
-use Acriss\Enum\AcrissType;
-use Acriss\Enum\TransmissionDrive;
-use Acriss\Enum\FuelAirConditioning;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Translation\Translator;
 use Symfony\Component\Translation\Loader\ArrayLoader;

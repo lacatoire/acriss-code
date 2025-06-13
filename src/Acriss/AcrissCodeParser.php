@@ -15,17 +15,12 @@ class AcrissCodeParser
      * Décode un code ACRISS à 4 lettres et retourne les enums correspondantes.
      *
      * @param string $code Code ACRISS (ex: CDMR)
-     * @return array{
-     *     category: AcrissCategory|null,
-     *     type: AcrissType|null,
-     *     transmission: TransmissionDrive|null,
-     *     fuel_aircon: FuelAirConditioning|null
-     * }
+     * @return AcrissCode
      */
     public function parse(string $code): AcrissCode
     {
         if (strlen($code) !== 4) {
-            throw new \InvalidArgumentException("ACRISS code must be exactly 4 characters.");
+            throw new \InvalidArgumentException('ACRISS code must be exactly 4 characters.');
         }
 
         [$c, $t, $tr, $f] = str_split(strtoupper($code));

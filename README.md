@@ -186,3 +186,9 @@ Want to add more? PRs welcome 👌
 ## 📄 License
 
 This library is open-sourced under the MIT license.
+
+## Launch phpunit, phpstan, composer without anything
+
+```bash
+  docker run --rm -v "${PWD}:/app" -w /app php:8.3-cli bash -c "apt update && apt install -y git unzip curl > /dev/null && curl -sS https://getcomposer.org/installer | php && php composer.phar install && php vendor/bin/phpunit"
+```
