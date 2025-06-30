@@ -1,67 +1,63 @@
-acriss.category.M: "Mini"
-acriss.category.N: "Mini Elite"
-acriss.category.E: "Economy"
-acriss.category.H: "Economy Elite"
-acriss.category.C: "Compact"
-acriss.category.D: "Compact Elite"
-acriss.category.I: "Intermediate"
-acriss.category.J: "Intermediate Elite"
-acriss.category.S: "Standard"
-acriss.category.R: "Standard Elite"
-acriss.category.F: "Fullsize"
-acriss.category.G: "Fullsize Elite"
-acriss.category.P: "Premium"
-acriss.category.U: "Premium Elite"
-acriss.category.L: "Luxury"
-acriss.category.W: "Luxury Elite"
-acriss.category.O: "Oversize"
-acriss.category.X: "Special"
+acriss.category.MINI: Mini
+acriss.category.MINI_ELITE: Mini Elite
+acriss.category.ECONOMY: Economy
+acriss.category.ECONOMY_ELITE: Economy Elite
+acriss.category.COMPACT: Kompakt
+acriss.category.COMPACT_ELITE: Kompakt Elite
+acriss.category.INTERMEDIATE: Mittelklasse
+acriss.category.INTERMEDIATE_ELITE: Mittelklasse Elite
+acriss.category.STANDARD: Standard
+acriss.category.STANDARD_ELITE: Standard Elite
+acriss.category.FULLSIZE: Groß
+acriss.category.FULLSIZE_ELITE: Groß Elite
+acriss.category.PREMIUM: Premium
+acriss.category.PREMIUM_ELITE: Premium Elite
+acriss.category.LUXURY: Luxus
+acriss.category.LUXURY_ELITE: Luxus Elite
+acriss.category.OVERSIZE: Übergröße
+acriss.category.SPECIAL: Spezial
 
-acriss.type.B: "Two/Three Door"
-acriss.type.C: "Two/Four Door"
-acriss.type.D: "Four/Five Door"
-acriss.type.W: "Wagon/Estate"
-acriss.type.V: "Passenger Van"
-acriss.type.L: "Limousine/Sedan"
-acriss.type.S: "Sport"
-acriss.type.T: "Convertible"
-acriss.type.F: "SUV"
-acriss.type.J: "Open Air All Terrain"
-acriss.type.X: "Special"
-acriss.type.P: "Pick-up Single Extended Cab Two Door"
-acriss.type.Q: "Pick-up Double Cab Four Door"
-acriss.type.Z: "Special Offer Car"
-acriss.type.E: "Coupe"
-acriss.type.M: "Monospace"
-acriss.type.R: "Recreational Vehicle"
-acriss.type.H: "Motor Home"
-acriss.type.Y: "Two Wheel Vehicle"
-acriss.type.N: "Roadster"
-acriss.type.G: "Crossover"
-acriss.type.K: "Commercial Van/Truck"
+acriss.type.TWO_DOOR: 2-Türer
+acriss.type.THREE_DOOR: 3-Türer
+acriss.type.FOUR_FIVE_DOOR: 4/5-Türer
+acriss.type.FIVE_DOOR: 5-Türer
+acriss.type.SUV: SUV
+acriss.type.MONOSPACE: Van
+acriss.type.CONVERTIBLE: Cabrio
+acriss.type.COUPE: Coupé
+acriss.type.ESTATE: Kombi
+acriss.type.OPEN_AIR_ALL_TERRAIN: Offenes Allradfahrzeug
+acriss.type.PICKUP_REGULAR_CAB: Pickup (Einzelkabine)
+acriss.type.PICKUP_EXTENDED_CAB: Pickup (Doppelkabine)
+acriss.type.PASSENGER_VAN: Kleinbus
+acriss.type.CARGO_VAN: Transporter
+acriss.type.MOTOR_HOME: Wohnmobil
+acriss.type.LIMOUSINE: Limousine
 
-acriss.transmission.M: "Manual Unspecified Drive"
-acriss.transmission.N: "Manual Four Wheel Drive"
-acriss.transmission.C: "Manual All Wheel Drive"
-acriss.transmission.A: "Automatic Unspecified Drive"
-acriss.transmission.B: "Automatic Four Wheel Drive"
-acriss.transmission.D: "Automatic All Wheel Drive"
+acriss.transmission.MANUAL_UNSPECIFIED_DRIVE: Schaltgetriebe
+acriss.transmission.MANUAL_2WD: Schaltgetriebe (2WD)
+acriss.transmission.MANUAL_4WD: Schaltgetriebe (4x4)
+acriss.transmission.MANUAL_AWD: Schaltgetriebe (Allrad)
+acriss.transmission.AUTOMATIC_UNSPECIFIED_DRIVE: Automatik
+acriss.transmission.AUTOMATIC_2WD: Automatik (2WD)
+acriss.transmission.AUTOMATIC_4WD: Automatik (4x4)
+acriss.transmission.AUTOMATIC_AWD: Automatik (Allrad)
 
-acriss.fuel_aircon.R: "Unspecified Fuel/Power with A/C"
-acriss.fuel_aircon.N: "Unspecified Fuel/Power without A/C"
-acriss.fuel_aircon.D: "Diesel with A/C"
-acriss.fuel_aircon.Q: "Diesel without A/C"
-acriss.fuel_aircon.H: "Hybrid"
-acriss.fuel_aircon.I: "Hybrid Plug-in"
-acriss.fuel_aircon.E: "Electric"
-acriss.fuel_aircon.C: "Electric Plus"
-acriss.fuel_aircon.L: "LPG/Compressed Gas with A/C"
-acriss.fuel_aircon.S: "LPG/Compressed Gas without A/C"
-acriss.fuel_aircon.A: "Hydrogen with A/C"
-acriss.fuel_aircon.B: "Hydrogen without A/C"
-acriss.fuel_aircon.M: "Multi Fuel/Power with A/C"
-acriss.fuel_aircon.F: "Multi Fuel/Power without A/C"
-acriss.fuel_aircon.V: "Petrol with A/C"
-acriss.fuel_aircon.Z: "Petrol without A/C"
-acriss.fuel_aircon.U: "Ethanol with A/C"
-acriss.fuel_aircon.X: "Ethanol without A/C"
+acriss.fuel_aircon.PETROL_NO_AC: Benzin ohne Klimaanlage
+acriss.fuel_aircon.PETROL_AC: Benzin mit Klimaanlage
+acriss.fuel_aircon.DIESEL_NO_AC: Diesel ohne Klimaanlage
+acriss.fuel_aircon.DIESEL_AC: Diesel mit Klimaanlage
+acriss.fuel_aircon.HYBRID_NO_AC: Hybrid ohne Klimaanlage
+acriss.fuel_aircon.HYBRID_AC: Hybrid mit Klimaanlage
+acriss.fuel_aircon.ELECTRIC_NO_AC: Elektro ohne Klimaanlage
+acriss.fuel_aircon.ELECTRIC_AC: Elektro mit Klimaanlage
+acriss.fuel_aircon.LPG_NO_AC: LPG ohne Klimaanlage
+acriss.fuel_aircon.LPG_AC: LPG mit Klimaanlage
+acriss.fuel_aircon.HYDROGEN_NO_AC: Wasserstoff ohne Klimaanlage
+acriss.fuel_aircon.HYDROGEN_AC: Wasserstoff mit Klimaanlage
+acriss.fuel_aircon.MULTIFUEL_NO_AC: Mehrstoff ohne Klimaanlage
+acriss.fuel_aircon.MULTIFUEL_AC: Mehrstoff mit Klimaanlage
+acriss.fuel_aircon.ETHANOL_NO_AC: Ethanol ohne Klimaanlage
+acriss.fuel_aircon.ETHANOL_AC: Ethanol mit Klimaanlage
+acriss.fuel_aircon.UNKNOWN_NO_AC: Unbekannt ohne Klimaanlage
+acriss.fuel_aircon.UNKNOWN_AC: Unbekannt mit Klimaanlage

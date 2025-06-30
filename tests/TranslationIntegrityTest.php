@@ -1,28 +1,30 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Acriss\Tests;
 
 use Acriss\Enum\AcrissCategory;
 use Acriss\Enum\AcrissType;
-use Acriss\Enum\TransmissionDrive;
 use Acriss\Enum\FuelAirConditioning;
+use Acriss\Enum\TransmissionDrive;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Yaml;
 
 final class TranslationIntegrityTest extends TestCase
 {
-    private const TRANSLATION_PATH = __DIR__ . '/../translations/';
+    private const string TRANSLATION_PATH = __DIR__.'/../translations/';
 
-    private const ENUM_MAP = [
-        'acriss.category'     => AcrissCategory::class,
-        'acriss.type'         => AcrissType::class,
+    private const array ENUM_MAP = [
+        'acriss.category' => AcrissCategory::class,
+        'acriss.type' => AcrissType::class,
         'acriss.transmission' => TransmissionDrive::class,
-        'acriss.fuel_aircon'  => FuelAirConditioning::class,
+        'acriss.fuel_aircon' => FuelAirConditioning::class,
     ];
 
-    public function test_all_enum_translations_are_complete(): void
+    public function testAllEnumTranslationsAreComplete(): void
     {
-        $files = glob(self::TRANSLATION_PATH . 'messages.*.yaml');
+        $files = glob(self::TRANSLATION_PATH.'messages.*.yaml');
 
         self::assertNotEmpty($files, 'No translation files found in the translations/ directory.');
 

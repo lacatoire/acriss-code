@@ -6,22 +6,47 @@ namespace Acriss\Enum;
 
 enum FuelAirConditioning: string
 {
-    case R = 'UNSPECIFIED_FUEL_POWER_WITH_AIR';
-    case N = 'UNSPECIFIED_FUEL_POWER_WITHOUT_AIR';
-    case D = 'DIESEL_AIR';
-    case Q = 'DIESEL_NO_AIR';
-    case H = 'HYBRID';
-    case I = 'HYBRID_PLUG_IN';
-    case E = 'ELECTRIC';
-    case C = 'ELECTRIC_PLUS';
-    case L = 'LPG_COMPRESSED_GAS_AIR';
-    case S = 'LPG_COMPRESSED_GAS_NO_AIR';
-    case A = 'HYDROGEN_AIR';
-    case B = 'HYDROGEN_NO_AIR';
-    case M = 'MULTI_FUEL_POWER_AIR';
-    case F = 'MULTI_FUEL_POWER_NO_AIR';
-    case V = 'PETROL_AIR';
-    case Z = 'PETROL_NO_AIR';
-    case U = 'ETHANOL_AIR';
-    case X = 'ETHANOL_NO_AIR';
+    case PETROL_NO_AC = 'PETROL_NO_AC';
+    case PETROL_AC = 'PETROL_AC';
+    case DIESEL_NO_AC = 'DIESEL_NO_AC';
+    case DIESEL_AC = 'DIESEL_AC';
+    case HYBRID_NO_AC = 'HYBRID_NO_AC';
+    case HYBRID_AC = 'HYBRID_AC';
+    case ELECTRIC_NO_AC = 'ELECTRIC_NO_AC';
+    case ELECTRIC_AC = 'ELECTRIC_AC';
+    case LPG_NO_AC = 'LPG_NO_AC';
+    case LPG_AC = 'LPG_AC';
+    case HYDROGEN_NO_AC = 'HYDROGEN_NO_AC';
+    case HYDROGEN_AC = 'HYDROGEN_AC';
+    case MULTIFUEL_NO_AC = 'MULTIFUEL_NO_AC';
+    case MULTIFUEL_AC = 'MULTIFUEL_AC';
+    case ETHANOL_NO_AC = 'ETHANOL_NO_AC';
+    case ETHANOL_AC = 'ETHANOL_AC';
+    case UNKNOWN_NO_AC = 'UNKNOWN_NO_AC';
+    case UNKNOWN_AC = 'UNKNOWN_AC';
+
+    public static function fromLetter(string $letter): ?self
+    {
+        return match (strtoupper($letter)) {
+            'N' => self::PETROL_NO_AC,
+            'R' => self::PETROL_AC,
+            'D' => self::DIESEL_NO_AC,
+            'Q' => self::DIESEL_AC,
+            'H' => self::HYBRID_NO_AC,
+            'I' => self::HYBRID_AC,
+            'E' => self::ELECTRIC_NO_AC,
+            'C' => self::ELECTRIC_AC,
+            'L' => self::LPG_NO_AC,
+            'S' => self::LPG_AC,
+            'A' => self::HYDROGEN_NO_AC,
+            'B' => self::HYDROGEN_AC,
+            'M' => self::MULTIFUEL_NO_AC,
+            'V' => self::MULTIFUEL_AC,
+            'X' => self::ETHANOL_NO_AC,
+            'Z' => self::ETHANOL_AC,
+            'U' => self::UNKNOWN_NO_AC,
+            'Y' => self::UNKNOWN_AC,
+            default => null,
+        };
+    }
 }
