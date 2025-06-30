@@ -2,13 +2,7 @@
 
 declare(strict_types=1);
 
-
-$finder = new PhpCsFixer\Finder()
-    ->in(__DIR__.'../../src')
-    ->exclude('var')
-    ->exclude('tests')
-    ->exclude('vendor')
-;
+$finder = new PhpCsFixer\Finder();
 
 return new PhpCsFixer\Config()
     ->setRules([
