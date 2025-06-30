@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
-$finder = new PhpCsFixer\Finder();
+use PhpCsFixer\Config;
+use PhpCsFixer\Finder;
 
-return new PhpCsFixer\Config()
+$finder = Finder::create()
+    ->in(['src', 'tests']);
+
+return new Config()
     ->setRules([
         '@Symfony' => true,
     ])

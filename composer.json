@@ -38,8 +38,8 @@
     }
   },
   "scripts": {
-    "codesniffer": "PHP_CS_FIXER_IGNORE_ENV=1 php vendor/bin/php-cs-fixer fix src tests --dry-run --config=.github/php-cs-fixer/.php-cs-fixer.php",
-    "codesniffer-fix": "PHP_CS_FIXER_IGNORE_ENV=1 php vendor/bin/php-cs-fixer fix src tests --config=.github/php-cs-fixer/.php-cs-fixer.php",
+    "codesniffer": "PHP_CS_FIXER_IGNORE_ENV=1 php vendor/bin/php-cs-fixer fix src tests --dry-run --verbose --show-progress=dots --config=.github/php-cs-fixer/.php-cs-fixer.php",
+    "codesniffer-fix": "PHP_CS_FIXER_IGNORE_ENV=1 php vendor/bin/php-cs-fixer fix src tests --verbose --show-progress=dots --config=.github/php-cs-fixer/.php-cs-fixer.php",
     "phpstan": "php ./vendor/bin/phpstan analyse --configuration .github/phpstan/phpstan.neon",
     "phpunit": "php ./vendor/bin/phpunit --configuration ./phpunit.xml.dist ./tests"
   },
