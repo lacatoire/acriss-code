@@ -11,9 +11,9 @@ use Symfony\Component\Yaml\Yaml;
 
 final class TranslationIntegrityTest extends TestCase
 {
-    private const TRANSLATION_PATH = __DIR__ . '/../translations/';
+    private const string TRANSLATION_PATH = __DIR__ . '/../translations/';
 
-    private const ENUM_MAP = [
+    private const array ENUM_MAP = [
         'acriss.category'     => AcrissCategory::class,
         'acriss.type'         => AcrissType::class,
         'acriss.transmission' => TransmissionDrive::class,
@@ -40,6 +40,7 @@ final class TranslationIntegrityTest extends TestCase
                     self::assertNotEmpty($translations[$key], "Empty translation for key '$key' in locale '$locale'");
                 }
             }
+
         }
     }
 }

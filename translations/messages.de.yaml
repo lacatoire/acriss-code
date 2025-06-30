@@ -1,67 +1,60 @@
-acriss.category.M: "Mini"
-acriss.category.N: "Mini Elite"
-acriss.category.E: "Economy"
-acriss.category.H: "Economy Elite"
-acriss.category.C: "Kompakt"
-acriss.category.D: "Kompakt Elite"
-acriss.category.I: "Mittelklasse"
-acriss.category.J: "Mittelklasse Elite"
-acriss.category.S: "Standard"
-acriss.category.R: "Standard Elite"
-acriss.category.F: "Oberklasse"
-acriss.category.G: "Oberklasse Elite"
-acriss.category.P: "Premium Limousine"
-acriss.category.U: "Premium Limousine Elite"
-acriss.category.L: "Luxus"
-acriss.category.W: "Luxus Elite"
-acriss.category.O: "Übergröße"
-acriss.category.X: "Spezial"
-
-acriss.type.B: "2/3 Türen"
-acriss.type.C: "2 oder 4 Türen"
-acriss.type.D: "4/5 Türen"
-acriss.type.W: "Kombi"
-acriss.type.V: "Minibus"
-acriss.type.L: "Limousine"
-acriss.type.S: "Sportwagen"
-acriss.type.T: "Cabrio"
-acriss.type.F: "SUV"
-acriss.type.J: "Offen, Geländewagen"
-acriss.type.X: "Spezial"
-acriss.type.P: "Pick-up (Einzel- oder Extra-Kabine), 2 Türen"
-acriss.type.Q: "Pick-up (Doppelkabine), 4 Türen"
-acriss.type.Z: "Sonderangebot"
-acriss.type.E: "Coupé"
-acriss.type.M: "Van"
-acriss.type.R: "Freizeitfahrzeug"
-acriss.type.H: "Wohnmobil"
-acriss.type.Y: "Zweirad"
-acriss.type.N: "Roadster"
-acriss.type.G: "Crossover"
-acriss.type.K: "Nutzfahrzeug"
-
-acriss.transmission.M: "Manuell, Antrieb nicht spezifiziert"
-acriss.transmission.N: "Manuell, Allradantrieb"
-acriss.transmission.C: "Manuell, permanenter Allrad"
-acriss.transmission.A: "Automatik, Antrieb nicht spezifiziert"
-acriss.transmission.B: "Automatik, Allradantrieb"
-acriss.transmission.D: "Automatik, permanenter Allrad"
-
-acriss.fuel_aircon.R: "Unbekannter Kraftstoff, mit Klimaanlage"
-acriss.fuel_aircon.N: "Unbekannter Kraftstoff, ohne Klimaanlage"
-acriss.fuel_aircon.D: "Diesel, mit Klimaanlage"
-acriss.fuel_aircon.Q: "Diesel, ohne Klimaanlage"
-acriss.fuel_aircon.H: "Hybrid, mit Klimaanlage"
-acriss.fuel_aircon.I: "Plug-in-Hybrid, mit Klimaanlage"
-acriss.fuel_aircon.E: "Elektro (<400 km), mit Klimaanlage"
-acriss.fuel_aircon.C: "Elektro (>400 km), mit Klimaanlage"
-acriss.fuel_aircon.L: "Gas/LPG, mit Klimaanlage"
-acriss.fuel_aircon.S: "Gas/LPG, ohne Klimaanlage"
-acriss.fuel_aircon.A: "Wasserstoff, mit Klimaanlage"
-acriss.fuel_aircon.B: "Wasserstoff, ohne Klimaanlage"
-acriss.fuel_aircon.M: "Multi-Kraftstoff, mit Klimaanlage"
-acriss.fuel_aircon.F: "Multi-Kraftstoff, ohne Klimaanlage"
-acriss.fuel_aircon.V: "Benzin, mit Klimaanlage"
-acriss.fuel_aircon.Z: "Benzin, ohne Klimaanlage"
-acriss.fuel_aircon.U: "Ethanol, mit Klimaanlage"
-acriss.fuel_aircon.X: "Ethanol, ohne Klimaanlage"
+acriss.category.MINI: 'Mini'
+acriss.category.MINI_ELITE: {'fr': 'Mini Elite (fr)', 'de': 'Mini Elite (de)', 'it': 'Mini Elite (it)'}
+acriss.category.ECONOMY: {'fr': 'Economy (fr)', 'de': 'Economy (de)', 'it': 'Economy (it)'}
+acriss.category.ECONOMY_ELITE: {'fr': 'Economy Elite (fr)', 'de': 'Economy Elite (de)', 'it': 'Economy Elite (it)'}
+acriss.category.COMPACT: {'fr': 'Compact (fr)', 'de': 'Compact (de)', 'it': 'Compact (it)'}
+acriss.category.COMPACT_ELITE: {'fr': 'Compact Elite (fr)', 'de': 'Compact Elite (de)', 'it': 'Compact Elite (it)'}
+acriss.category.INTERMEDIATE: {'fr': 'Intermediate (fr)', 'de': 'Intermediate (de)', 'it': 'Intermediate (it)'}
+acriss.category.INTERMEDIATE_ELITE: {'fr': 'Intermediate Elite (fr)', 'de': 'Intermediate Elite (de)', 'it': 'Intermediate Elite (it)'}
+acriss.category.STANDARD: {'fr': 'Standard (fr)', 'de': 'Standard (de)', 'it': 'Standard (it)'}
+acriss.category.STANDARD_ELITE: {'fr': 'Standard Elite (fr)', 'de': 'Standard Elite (de)', 'it': 'Standard Elite (it)'}
+acriss.category.FULLSIZE: {'fr': 'Fullsize (fr)', 'de': 'Fullsize (de)', 'it': 'Fullsize (it)'}
+acriss.category.FULLSIZE_ELITE: {'fr': 'Fullsize Elite (fr)', 'de': 'Fullsize Elite (de)', 'it': 'Fullsize Elite (it)'}
+acriss.category.PREMIUM: {'fr': 'Premium (fr)', 'de': 'Premium (de)', 'it': 'Premium (it)'}
+acriss.category.PREMIUM_ELITE: {'fr': 'Premium Elite (fr)', 'de': 'Premium Elite (de)', 'it': 'Premium Elite (it)'}
+acriss.category.LUXURY: {'fr': 'Luxury (fr)', 'de': 'Luxury (de)', 'it': 'Luxury (it)'}
+acriss.category.LUXURY_ELITE: {'fr': 'Luxury Elite (fr)', 'de': 'Luxury Elite (de)', 'it': 'Luxury Elite (it)'}
+acriss.category.OVERSIZE: {'fr': 'Oversize (fr)', 'de': 'Oversize (de)', 'it': 'Oversize (it)'}
+acriss.category.SPECIAL: {'fr': 'Special (fr)', 'de': 'Special (de)', 'it': 'Special (it)'}
+acriss.type.TWO_DOOR: {'fr': '2-door (fr)', 'de': '2-door (de)', 'it': '2-door (it)'}
+acriss.type.THREE_DOOR: {'fr': '3-door (fr)', 'de': '3-door (de)', 'it': '3-door (it)'}
+acriss.type.FOUR_FIVE_DOOR: {'fr': '4/5-door (fr)', 'de': '4/5-door (de)', 'it': '4/5-door (it)'}
+acriss.type.FIVE_DOOR: {'fr': '5-door (fr)', 'de': '5-door (de)', 'it': '5-door (it)'}
+acriss.type.SUV: {'fr': 'SUV (fr)', 'de': 'SUV (de)', 'it': 'SUV (it)'}
+acriss.type.MONOSPACE: {'fr': 'Monospace (fr)', 'de': 'Monospace (de)', 'it': 'Monospace (it)'}
+acriss.type.CONVERTIBLE: {'fr': 'Convertible (fr)', 'de': 'Convertible (de)', 'it': 'Convertible (it)'}
+acriss.type.COUPE: {'fr': 'Coupe (fr)', 'de': 'Coupe (de)', 'it': 'Coupe (it)'}
+acriss.type.ESTATE: {'fr': 'Estate (fr)', 'de': 'Estate (de)', 'it': 'Estate (it)'}
+acriss.type.OPEN_AIR_ALL_TERRAIN: {'fr': 'Open-air all-terrain (fr)', 'de': 'Open-air all-terrain (de)', 'it': 'Open-air all-terrain (it)'}
+acriss.type.PICKUP_REGULAR_CAB: {'fr': 'Pickup (regular cab) (fr)', 'de': 'Pickup (regular cab) (de)', 'it': 'Pickup (regular cab) (it)'}
+acriss.type.PICKUP_EXTENDED_CAB: {'fr': 'Pickup (extended cab) (fr)', 'de': 'Pickup (extended cab) (de)', 'it': 'Pickup (extended cab) (it)'}
+acriss.type.PASSENGER_VAN: {'fr': 'Passenger van (fr)', 'de': 'Passenger van (de)', 'it': 'Passenger van (it)'}
+acriss.type.CARGO_VAN: {'fr': 'Cargo van (fr)', 'de': 'Cargo van (de)', 'it': 'Cargo van (it)'}
+acriss.type.MOTOR_HOME: {'fr': 'Motor home (fr)', 'de': 'Motor home (de)', 'it': 'Motor home (it)'}
+acriss.type.LIMOUSINE: {'fr': 'Limousine (fr)', 'de': 'Limousine (de)', 'it': 'Limousine (it)'}
+acriss.transmission.MANUAL_UNSPECIFIED_DRIVE: {'fr': 'Manual (fr)', 'de': 'Manual (de)', 'it': 'Manual (it)'}
+acriss.transmission.MANUAL_2WD: {'fr': 'Manual (2WD) (fr)', 'de': 'Manual (2WD) (de)', 'it': 'Manual (2WD) (it)'}
+acriss.transmission.MANUAL_4WD: {'fr': 'Manual (4WD) (fr)', 'de': 'Manual (4WD) (de)', 'it': 'Manual (4WD) (it)'}
+acriss.transmission.MANUAL_AWD: {'fr': 'Manual (AWD) (fr)', 'de': 'Manual (AWD) (de)', 'it': 'Manual (AWD) (it)'}
+acriss.transmission.AUTOMATIC_UNSPECIFIED_DRIVE: {'fr': 'Automatic (fr)', 'de': 'Automatic (de)', 'it': 'Automatic (it)'}
+acriss.transmission.AUTOMATIC_2WD: {'fr': 'Automatic (2WD) (fr)', 'de': 'Automatic (2WD) (de)', 'it': 'Automatic (2WD) (it)'}
+acriss.transmission.AUTOMATIC_4WD: {'fr': 'Automatic (4WD) (fr)', 'de': 'Automatic (4WD) (de)', 'it': 'Automatic (4WD) (it)'}
+acriss.transmission.AUTOMATIC_AWD: {'fr': 'Automatic (AWD) (fr)', 'de': 'Automatic (AWD) (de)', 'it': 'Automatic (AWD) (it)'}
+acriss.fuel_aircon.PETROL_NO_AC: {'fr': 'Petrol without AC (fr)', 'de': 'Petrol without AC (de)', 'it': 'Petrol without AC (it)'}
+acriss.fuel_aircon.PETROL_AC: {'fr': 'Petrol with AC (fr)', 'de': 'Petrol with AC (de)', 'it': 'Petrol with AC (it)'}
+acriss.fuel_aircon.DIESEL_NO_AC: {'fr': 'Diesel without AC (fr)', 'de': 'Diesel without AC (de)', 'it': 'Diesel without AC (it)'}
+acriss.fuel_aircon.DIESEL_AC: {'fr': 'Diesel with AC (fr)', 'de': 'Diesel with AC (de)', 'it': 'Diesel with AC (it)'}
+acriss.fuel_aircon.HYBRID_NO_AC: {'fr': 'Hybrid without AC (fr)', 'de': 'Hybrid without AC (de)', 'it': 'Hybrid without AC (it)'}
+acriss.fuel_aircon.HYBRID_AC: {'fr': 'Hybrid with AC (fr)', 'de': 'Hybrid with AC (de)', 'it': 'Hybrid with AC (it)'}
+acriss.fuel_aircon.ELECTRIC_NO_AC: {'fr': 'Electric without AC (fr)', 'de': 'Electric without AC (de)', 'it': 'Electric without AC (it)'}
+acriss.fuel_aircon.ELECTRIC_AC: {'fr': 'Electric with AC (fr)', 'de': 'Electric with AC (de)', 'it': 'Electric with AC (it)'}
+acriss.fuel_aircon.LPG_NO_AC: {'fr': 'LPG without AC (fr)', 'de': 'LPG without AC (de)', 'it': 'LPG without AC (it)'}
+acriss.fuel_aircon.LPG_AC: {'fr': 'LPG with AC (fr)', 'de': 'LPG with AC (de)', 'it': 'LPG with AC (it)'}
+acriss.fuel_aircon.HYDROGEN_NO_AC: {'fr': 'Hydrogen without AC (fr)', 'de': 'Hydrogen without AC (de)', 'it': 'Hydrogen without AC (it)'}
+acriss.fuel_aircon.HYDROGEN_AC: {'fr': 'Hydrogen with AC (fr)', 'de': 'Hydrogen with AC (de)', 'it': 'Hydrogen with AC (it)'}
+acriss.fuel_aircon.MULTIFUEL_NO_AC: {'fr': 'Multifuel without AC (fr)', 'de': 'Multifuel without AC (de)', 'it': 'Multifuel without AC (it)'}
+acriss.fuel_aircon.MULTIFUEL_AC: {'fr': 'Multifuel with AC (fr)', 'de': 'Multifuel with AC (de)', 'it': 'Multifuel with AC (it)'}
+acriss.fuel_aircon.ETHANOL_NO_AC: {'fr': 'Ethanol without AC (fr)', 'de': 'Ethanol without AC (de)', 'it': 'Ethanol without AC (it)'}
+acriss.fuel_aircon.ETHANOL_AC: {'fr': 'Ethanol with AC (fr)', 'de': 'Ethanol with AC (de)', 'it': 'Ethanol with AC (it)'}
+acriss.fuel_aircon.UNKNOWN_NO_AC: {'fr': 'Unknown without AC (fr)', 'de': 'Unknown without AC (de)', 'it': 'Unknown without AC (it)'}
+acriss.fuel_aircon.UNKNOWN_AC: {'fr': 'Unknown with AC (fr)', 'de': 'Unknown with AC (de)', 'it': 'Unknown with AC (it)'}

@@ -46,9 +46,7 @@ use Acriss\AcrissCodeParser;
 $parser = new AcrissCodeParser();
 $code = $parser->parse('CDMR');
 
-// $code is an instance of Acriss\Model\AcrissCode
-
-echo $code->category->value; // COMPACT
+echo $code->category->value;
 ```
 
 ### Translate a code
@@ -56,13 +54,11 @@ echo $code->category->value; // COMPACT
 ```php
 use Acriss\AcrissTranslator;
 
-$translator = new AcrissTranslator($translatorService); // Symfony's TranslatorInterface
+$translator = new AcrissTranslator($translatorService);
 $labels = $translator->translate($code, 'fr');
 
-// $labels is an instance of Acriss\Model\TranslatedAcrissCode
-
-echo $labels->category; // "Compacte"
-echo $labels->fuelAirCon; // "Essence, avec climatisation"
+echo $labels->category;
+echo $labels->fuelAirCon;
 ```
 
 ### Get full details
@@ -125,7 +121,7 @@ composer install
 ```php
 use Acriss\AcrissTranslator;
 
-$translator = new AcrissTranslator($this->translator); // Symfony\Contracts\Translation\TranslatorInterface
+$translator = new AcrissTranslator($this->translator);
 
 ```
 * Compatible with Symfony translation (TranslatorInterface)

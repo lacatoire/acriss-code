@@ -26,10 +26,10 @@ class AcrissCodeParser
         [$c, $t, $tr, $f] = str_split(strtoupper($code));
 
         return new AcrissCode(
-            AcrissCategory::tryFrom($c),
-            AcrissType::tryFrom($t),
-            TransmissionDrive::tryFrom($tr),
-            FuelAirConditioning::tryFrom($f)
+            AcrissCategory::fromLetter($c),
+            AcrissType::fromLetter($t),
+            TransmissionDrive::fromLetter($tr),
+            FuelAirConditioning::fromLetter($f)
         );
     }
 }

@@ -20,10 +20,10 @@ class AcrissCodeParserTest extends TestCase
         $code = $parser->parse('CDMR');
 
         self::assertInstanceOf(AcrissCode::class, $code);
-        self::assertSame(AcrissCategory::C, $code->category);
-        self::assertSame(AcrissType::D, $code->type);
-        self::assertSame(TransmissionDrive::M, $code->transmission);
-        self::assertSame(FuelAirConditioning::R, $code->fuelAircon);
+        self::assertSame(AcrissCategory::COMPACT, $code->category);
+        self::assertSame(AcrissType::FOUR_FIVE_DOOR, $code->type);
+        self::assertSame(TransmissionDrive::MANUAL_UNSPECIFIED_DRIVE, $code->transmission);
+        self::assertSame(FuelAirConditioning::PETROL_AC, $code->fuelAircon);
     }
 
     public function test_invalid_code_length_throws_exception(): void
@@ -37,7 +37,7 @@ class AcrissCodeParserTest extends TestCase
     public function test_unknown_code_letters_result_in_null_properties(): void
     {
         $parser = new AcrissCodeParser();
-        $code = $parser->parse('ZZZZ'); // If Z is unmapped
+        $code = $parser->parse('ZZZW');
 
         self::assertNull($code->category);
         self::assertNull($code->type);

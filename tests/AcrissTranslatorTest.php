@@ -20,19 +20,19 @@ class AcrissTranslatorTest extends TestCase
         $translator = new Translator('fr');
         $translator->addLoader('array', new ArrayLoader());
         $translator->addResource('array', [
-            'acriss.category.C' => 'Compacte',
-            'acriss.type.D' => '4/5 portes',
-            'acriss.transmission.M' => 'Manuelle',
-            'acriss.fuel_aircon.R' => 'Essence, Clim.'
+            'acriss.category.COMPACT' => 'Compacte',
+            'acriss.type.FOUR_FIVE_DOOR' => '4/5 portes',
+            'acriss.transmission.MANUAL_UNSPECIFIED_DRIVE' => 'Manuelle',
+            'acriss.fuel_aircon.PETROL_AC' => 'Essence, Clim.'
         ], 'fr');
 
         $acrissTranslator = new AcrissTranslator($translator);
 
         $code = new AcrissCode(
-            AcrissCategory::C,
-            AcrissType::D,
-            TransmissionDrive::M,
-            FuelAirConditioning::R
+            AcrissCategory::COMPACT,
+            AcrissType::FOUR_FIVE_DOOR,
+            TransmissionDrive::MANUAL_UNSPECIFIED_DRIVE,
+            FuelAirConditioning::PETROL_AC
         );
 
         $translated = $acrissTranslator->translate($code);

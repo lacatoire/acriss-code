@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Translation\Translator;
 use Symfony\Component\Translation\Loader\ArrayLoader;
 
-class AcrissCodeDetailsTest extends TestCase
+class AcrissCodeDetailsTests extends TestCase
 {
     public function test_get_returns_full_details_object(): void
     {
@@ -37,7 +37,7 @@ class AcrissCodeDetailsTest extends TestCase
         self::assertInstanceOf(AcrissCodeDetailsResult::class, $result);
         self::assertSame('CDMR', $result->code);
 
-        self::assertSame(AcrissCategory::C, $result->raw->category);
+        self::assertSame(AcrissCategory::COMPACT, $result->raw->category);
         self::assertInstanceOf(TranslatedAcrissCode::class, $result->translated);
         self::assertSame('Compacte', $result->translated->category);
         self::assertSame('4/5 portes', $result->translated->type);
