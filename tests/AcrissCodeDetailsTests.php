@@ -7,16 +7,16 @@ namespace Acriss\Tests;
 use Acriss\AcrissCodeDetails;
 use Acriss\AcrissCodeParser;
 use Acriss\AcrissTranslator;
+use Acriss\Enum\AcrissCategory;
 use Acriss\Model\AcrissCodeDetailsResult;
 use Acriss\Model\TranslatedAcrissCode;
-use Acriss\Enum\AcrissCategory;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Translation\Translator;
 use Symfony\Component\Translation\Loader\ArrayLoader;
+use Symfony\Component\Translation\Translator;
 
 class AcrissCodeDetailsTests extends TestCase
 {
-    public function test_get_returns_full_details_object(): void
+    public function testGetReturnsFullDetailsObject(): void
     {
         $translator = new Translator('fr');
         $translator->addLoader('array', new ArrayLoader());
@@ -24,7 +24,7 @@ class AcrissCodeDetailsTests extends TestCase
             'acriss.category.C' => 'Compacte',
             'acriss.type.D' => '4/5 portes',
             'acriss.transmission.M' => 'Manuelle',
-            'acriss.fuel_aircon.R' => 'Essence, Clim.'
+            'acriss.fuel_aircon.R' => 'Essence, Clim.',
         ], 'fr');
 
         $service = new AcrissCodeDetails(

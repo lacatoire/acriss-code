@@ -10,7 +10,9 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 class AcrissTranslator
 {
-    public function __construct(private TranslatorInterface $translator) {}
+    public function __construct(private TranslatorInterface $translator)
+    {
+    }
 
     /** Traduit les composants d’un code ACRISS dans la langue spécifiée */
     public function translate(AcrissCode $code, ?string $locale = null): TranslatedAcrissCode

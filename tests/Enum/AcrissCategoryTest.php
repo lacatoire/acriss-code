@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Acriss\Tests\Enum;
@@ -11,14 +12,14 @@ use PHPUnit\Framework\TestCase;
  */
 class AcrissCategoryTest extends TestCase
 {
-    public function test_all_enum_names_are_uppercase_words(): void
+    public function testAllEnumNamesAreUppercaseWords(): void
     {
         foreach (AcrissCategory::cases() as $case) {
             self::assertMatchesRegularExpression('/^[A-Z][A-Z_]*$/', $case->name);
         }
     }
 
-    public function test_all_enum_values_are_non_empty_strings(): void
+    public function testAllEnumValuesAreNonEmptyStrings(): void
     {
         foreach (AcrissCategory::cases() as $case) {
             self::assertIsString($case->value);
@@ -26,7 +27,7 @@ class AcrissCategoryTest extends TestCase
         }
     }
 
-    public function test_from_letter_returns_expected_case(): void
+    public function testFromLetterReturnsExpectedCase(): void
     {
         self::assertSame(AcrissCategory::COMPACT, AcrissCategory::fromLetter('C'));
         self::assertSame(AcrissCategory::PREMIUM, AcrissCategory::fromLetter('P'));

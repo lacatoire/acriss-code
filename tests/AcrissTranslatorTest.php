@@ -1,21 +1,23 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Acriss\Tests;
 
 use Acriss\AcrissTranslator;
-use Acriss\Model\AcrissCode;
-use Acriss\Model\TranslatedAcrissCode;
 use Acriss\Enum\AcrissCategory;
 use Acriss\Enum\AcrissType;
-use Acriss\Enum\TransmissionDrive;
 use Acriss\Enum\FuelAirConditioning;
+use Acriss\Enum\TransmissionDrive;
+use Acriss\Model\AcrissCode;
+use Acriss\Model\TranslatedAcrissCode;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Translation\Translator;
 use Symfony\Component\Translation\Loader\ArrayLoader;
+use Symfony\Component\Translation\Translator;
 
 class AcrissTranslatorTest extends TestCase
 {
-    public function test_translate_returns_translated_object(): void
+    public function testTranslateReturnsTranslatedObject(): void
     {
         $translator = new Translator('fr');
         $translator->addLoader('array', new ArrayLoader());
@@ -23,7 +25,7 @@ class AcrissTranslatorTest extends TestCase
             'acriss.category.COMPACT' => 'Compacte',
             'acriss.type.FOUR_FIVE_DOOR' => '4/5 portes',
             'acriss.transmission.MANUAL_UNSPECIFIED_DRIVE' => 'Manuelle',
-            'acriss.fuel_aircon.PETROL_AC' => 'Essence, Clim.'
+            'acriss.fuel_aircon.PETROL_AC' => 'Essence, Clim.',
         ], 'fr');
 
         $acrissTranslator = new AcrissTranslator($translator);
@@ -44,7 +46,7 @@ class AcrissTranslatorTest extends TestCase
         self::assertSame('Essence, Clim.', $translated->fuelAircon);
     }
 
-    public function test_translate_with_null_fields_returns_unknown(): void
+    public function testTranslateWithNullFieldsReturnsUnknown(): void
     {
         $translator = new Translator('fr');
         $translator->addLoader('array', new ArrayLoader());

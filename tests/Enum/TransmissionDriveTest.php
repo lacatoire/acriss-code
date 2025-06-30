@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Acriss\Tests\Enum;
@@ -8,14 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class TransmissionDriveTest extends TestCase
 {
-    public function test_enum_case_names_are_uppercase_words(): void
+    public function testEnumCaseNamesAreUppercaseWords(): void
     {
         foreach (TransmissionDrive::cases() as $case) {
             self::assertMatchesRegularExpression('/^[A-Z0-9_]+$/', $case->name);
         }
     }
 
-    public function test_enum_values_are_not_empty_strings(): void
+    public function testEnumValuesAreNotEmptyStrings(): void
     {
         foreach (TransmissionDrive::cases() as $case) {
             self::assertIsString($case->value);
@@ -23,7 +24,7 @@ class TransmissionDriveTest extends TestCase
         }
     }
 
-    public function test_from_letter_returns_expected_case(): void
+    public function testFromLetterReturnsExpectedCase(): void
     {
         self::assertSame(TransmissionDrive::AUTOMATIC_2WD, TransmissionDrive::fromLetter('B'));
         self::assertSame(TransmissionDrive::MANUAL_4WD, TransmissionDrive::fromLetter('C'));

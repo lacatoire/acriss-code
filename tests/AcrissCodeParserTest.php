@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace Acriss\Tests;
 
 use Acriss\AcrissCodeParser;
-use Acriss\Model\AcrissCode;
 use Acriss\Enum\AcrissCategory;
 use Acriss\Enum\AcrissType;
-use Acriss\Enum\TransmissionDrive;
 use Acriss\Enum\FuelAirConditioning;
+use Acriss\Enum\TransmissionDrive;
+use Acriss\Model\AcrissCode;
 use PHPUnit\Framework\TestCase;
 
 class AcrissCodeParserTest extends TestCase
 {
-    public function test_parse_valid_code_returns_acriss_code_object(): void
+    public function testParseValidCodeReturnsAcrissCodeObject(): void
     {
         $parser = new AcrissCodeParser();
         $code = $parser->parse('CDMR');
@@ -26,7 +26,7 @@ class AcrissCodeParserTest extends TestCase
         self::assertSame(FuelAirConditioning::PETROL_AC, $code->fuelAircon);
     }
 
-    public function test_invalid_code_length_throws_exception(): void
+    public function testInvalidCodeLengthThrowsException(): void
     {
         $parser = new AcrissCodeParser();
 
@@ -34,7 +34,7 @@ class AcrissCodeParserTest extends TestCase
         $parser->parse('XYZ');
     }
 
-    public function test_unknown_code_letters_result_in_null_properties(): void
+    public function testUnknownCodeLettersResultInNullProperties(): void
     {
         $parser = new AcrissCodeParser();
         $code = $parser->parse('ZZZW');
