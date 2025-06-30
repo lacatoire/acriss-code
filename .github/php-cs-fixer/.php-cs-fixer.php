@@ -6,11 +6,11 @@ use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
 $finder = Finder::create()
-    ->in(['src', 'tests']);
+    ->in([__DIR__ . '/../../src', __DIR__ . '/../../tests']);
 
-return new Config()
-    ->setRules([
-        '@Symfony' => true,
-    ])
-    ->setFinder($finder)
-    ->setUsingCache(false);
+$config = new Config();
+$config->setRules(['@Symfony' => true]);
+$config->setFinder($finder);
+$config->setUsingCache(false);
+
+return $config;
